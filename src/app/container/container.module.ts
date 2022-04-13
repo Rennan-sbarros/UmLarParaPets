@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { ContainerRoutingModule } from './container-routing.module';
-import { HeaderComponent } from './header/header.component';
-import { AngularMaterialModule } from '../shared/angular-material/angular-material.module';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -15,8 +14,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     CommonModule,
     ContainerRoutingModule,
-    AngularMaterialModule
   ],
-  exports: [HeaderComponent, FooterComponent]
+  exports: [HeaderComponent, FooterComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class ContainerModule { }

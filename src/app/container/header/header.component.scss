@@ -1,0 +1,15 @@
+@import "../../../styles.scss";
+
+.navbar{
+  height: 3.75rem;
+  background-color: $azul;
+}
+
+.navbar-collapse{
+
+  & .nav-link{
+    color: $branco;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
