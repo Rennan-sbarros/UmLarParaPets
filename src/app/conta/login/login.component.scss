@@ -33,4 +33,11 @@
       font-size: 1.5rem;
     }
   }
+
+  & p, a{
+    color: $roxo;
+    text-decoration: none;
+    padding-top: 2rem;
+    margin: 0 auto;
+  }
 }
