@@ -1,4 +1,11 @@
+@import '../../../styles.scss';
+
 .container-geral{
-  background-color: #D5E5F2;
+  background-color: $branco;
   height: 22rem;
+}
+
+img{
+  width: 31.25rem;
+  height: 31.25rem;
 }
