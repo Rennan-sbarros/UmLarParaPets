@@ -1,0 +1,36 @@
+@import '../../../../styles.scss';
+
+.container{
+  background-color: $azulClaro;
+  height: 24rem;
+  margin-top: 6rem;
+  padding-top: 4.5rem;
+  border-radius: 2rem;
+  font-family: $fontPrincipal;
+  font-weight: bold;
+  box-shadow: 0.625rem 0.313rem 0.313rem rgba(101, 45, 144, 0.534);
+  & h2{
+    font-size: 3rem;
+    color: $roxo;
+  }
+
+  & .form{
+    margin: 0 auto;
+    width: 25rem;
+    padding-top: 0.1rem;
+    & .form-group{
+      margin-top: 1rem;
+      & input{
+        height: 3rem;
+      }
+    }
+
+    & button{
+      width: 100%;
+      height: 3rem;
+      margin-top: 1rem;
+      background-color: $roxo;
+      font-size: 1.5rem;
+    }
+  }
+}
