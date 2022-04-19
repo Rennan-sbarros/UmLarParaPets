@@ -1,11 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Bebas Neue', "Helvetica Neue", sans-serif; }
 
 // Padrão de cores
 $preto: #1E2326;
-$azul: #91bada;
-$branco: #F3F6F8;
-$cinza: #707070;
-$marrom: #B2977C;
+$branco: #FEFEFE;
+$roxo: #652D90;
+$azul: #0F75BD;
+$azulClaro: #a2def8;
+
+// Fonts
+$fontPrincipal: 'Bebas Neue';
