@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   senha = '';
 
   constructor(
-    private authSerivce: AutenticacaoService,
+    private authService: AutenticacaoService,
     private router: Router
   ) { }
 
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    this.authSerivce.autenticar(this.usuario, this.senha).subscribe(
+    this.authService.autenticar(this.usuario, this.senha).subscribe(
       () => {
       this.router.navigate(['animais']);
       },
