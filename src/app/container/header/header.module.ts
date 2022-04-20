@@ -1,21 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-
-import { ContainerComponent } from './container.component';
-import { HeaderComponent } from './header/header.component';
-
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    ContainerComponent
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
-    ContainerComponent
+    HeaderComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class ContainerModule { }
+export class HeaderModule { }
