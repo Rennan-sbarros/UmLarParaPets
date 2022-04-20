@@ -1,23 +1,26 @@
 <div class="container container-geral">
   <h2 class="text-center">Registre-se e mostre seu pet ao mundo!</h2>
 
-  <form class="form mt-4">
+  <form class="form mt-4" [formGroup]="novoUsuarioForm" (submit)="cadastrar()">
     <div class="form-group">
       <input
         class="form-control"
         placeholder="Email"
+        formControlName="email"
       >
     </div>
     <div class="form-group">
       <input
         class="form-control"
         placeholder="Nome Completo"
+        formControlName="fullName"
       >
     </div>
     <div class="form-group">
       <input
         class="form-control"
         placeholder="Usuário"
+        formControlName="userName"
       >
     </div>
     <div class="form-group">
@@ -25,6 +28,7 @@
         type="password"
         class="form-control"
         placeholder="Senha"
+        formControlName="password"
       >
     </div>
 
