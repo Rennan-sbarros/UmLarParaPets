@@ -10,6 +10,7 @@ const API = environment.apiURL;
 })
 export class NovoUsuarioService {
   urlSignup = `${API}/user/signup`
+  urlExists = `${API}/user/exists`
 
   constructor(
     private http: HttpClient
@@ -17,5 +18,9 @@ export class NovoUsuarioService {
 
   cadastrarNovoUsuario(novoUsuario: NovoUsuario){
     return this.http.post(this.urlSignup, novoUsuario)
+  }
+
+  verificaUsuarioExistente(nomeUsuario: string){
+    return this.http.get(`${this.urlExists}/${nomeUsuario}`)
   }
 }
