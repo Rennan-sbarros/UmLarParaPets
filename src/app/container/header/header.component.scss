@@ -12,4 +12,43 @@
     font-size: 1.2rem;
     font-weight: bold;
   }
+
+  .login-logout{
+    & img{
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.template-login{
+  display: flex;
+
+  & img{
+    margin-right: 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  & .content-login{
+    color: $branco;
+    margin-right: 1rem;
+    font-size: 1rem;
+
+    & span{
+      font-weight: 500;
+    }
+
+    & a{
+      color: $branco;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+    }
+
+    & .click-sair{
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
 }
