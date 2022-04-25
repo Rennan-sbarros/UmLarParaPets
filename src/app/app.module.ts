@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AutenticacaoModule } from './autenticacao/autenticacao.module';
 import { HeaderModule } from './container/header/header.module';
 
 @NgModule({
@@ -16,7 +17,7 @@ import { HeaderModule } from './container/header/header.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HeaderModule
+    HeaderModule,AutenticacaoModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
