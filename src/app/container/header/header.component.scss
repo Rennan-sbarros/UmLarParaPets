@@ -1,28 +1,19 @@
 @import "../../../styles.scss";
 
-.navbar{
-  height: 4rem;
+.barra-nav{
+  height: 4.3rem;
   background-color: $azul;
-}
 
-.navbar-collapse{
-
-  & .nav-link{
+  & .navbar-brand{
     color: $branco;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-
-  .login-logout{
-    & img{
-      width: 1rem;
-      height: 1rem;
-    }
+    padding-left: 1rem;
+    cursor: pointer;
   }
 }
 
 .template-login{
   display: flex;
+  padding-right: 1rem;
 
   & img{
     margin-right: 10px;

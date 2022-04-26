@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuModule } from '../menu/menu.module';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
@@ -9,7 +10,8 @@ import { HeaderComponent } from './header.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MenuModule
   ],
   exports: [
     HeaderComponent,
