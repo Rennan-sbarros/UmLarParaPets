@@ -17,7 +17,8 @@ import { HeaderModule } from './container/header/header.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HeaderModule,AutenticacaoModule
+    HeaderModule,
+    AutenticacaoModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

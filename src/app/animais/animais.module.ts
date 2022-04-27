@@ -10,6 +10,7 @@ import { ComentariosComponent } from './detalhe-animal/comentarios/comentarios.c
 import { DetalheAnimalComponent } from './detalhe-animal/detalhe-animal.component';
 import { GradeFotosAnimaisComponent } from './grade-fotos-animais/grade-fotos-animais.component';
 import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
+import { NovoAnimalComponent } from './novo-animal/novo-animal.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ListaAnimaisComponent } from './lista-animais/lista-animais.component';
     AnimalComponent,
     GradeFotosAnimaisComponent,
     DetalheAnimalComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    NovoAnimalComponent
   ],
   imports: [
     CommonModule,
